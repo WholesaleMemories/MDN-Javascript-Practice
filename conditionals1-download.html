@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Conditionals: Task 1</title>
-    <style>
-      p {
-        color: purple;
-        margin: 0.5em 0;
-      }
+    <head>
+        <meta charset="utf-8" />
+        <title>Conditionals: Task 1</title>
+        <style>
+            p {
+                color: purple;
+                margin: 0.5em 0;
+            }
 
-      * {
-        box-sizing: border-box;
-      }
-    </style>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
+            * {
+                box-sizing: border-box;
+            }
+        </style>
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
 
-  <body>
+    <body>
+        <section class="preview"></section>
+    </body>
 
-    <section class="preview"></section>
+    <script>
+        let season = prompt();
+        let response;
 
-  </body>
-  
-  
-  <script>
-    let season = prompt();
-    let response;
+        // Add your code here
+        if (season === "summer") {
+            response = "It's summer. I hope you have your sunscreen!";
+        } else if (season === "winter") {
+            response = "It's winter. I hope you have your scarf!";
+        } else {
+            response = "We don't know what season it is.";
+        }
+        // Don't edit the code below here!
 
-    // Add your code here
-    if (season === 'summer') {
-      response = 'It\'s summer. I hope you have your sunscreen!';
-    } else if (season === 'winter') {
-      response = 'It\'s winter. I hope you have your scarf!';
-    } else {
-      response = 'We don\'t know what season it is.';
-    }
-    // Don't edit the code below here!
+        const section = document.querySelector("section");
 
-    const section = document.querySelector('section');
-
-    let para1 = document.createElement('p');
-    para1.textContent = response;
-    section.appendChild(para1);
-    
-  </script>
-
+        let para1 = document.createElement("p");
+        para1.textContent = response;
+        section.appendChild(para1);
+    </script>
 </html>
